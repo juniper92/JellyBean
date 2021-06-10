@@ -49,7 +49,7 @@ abstract class BaseActivity : AppCompatActivity() {
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
-        // 8. 메서드 안에서 먼저 grantResult에 all 메서드 이용해 결괏값이 모두 승인됐는지 확인
+        // 8. 메서드 안에서 먼저 grantResult에 all 메서드 이용해 결괏값이 모두 승인됐는지 확인한다
         if (grantResults.all { it == PackageManager.PERMISSION_GRANTED }) {
             permissionGranted(requestCode)  // true일때
         } else {
