@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
     // 권한 확인 메서드
     fun checkPermission() {
 
-        // 카메라 권한 승인 상태 확인 후, 결과값을 변수에 저장장
+        // 카메라 권한 승인 상태 확인 후, 결과값을 변수에 저장
        val cameraPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
         // import시 꼭 android로 선택하기!
 
         if (cameraPermission == PackageManager.PERMISSION_GRANTED) {
             startProcess() // 1. 승인이면 프로그램 진행
         } else {
-            requestPermission() // 2. 미승인이면 권한 요청청
+            requestPermission() // 2. 미승인이면 권한 요청
        }
     }
 
