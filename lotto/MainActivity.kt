@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         initClearButton()
     }
 
-    // 5. initRunButton() = 랜덤번호 생성
+    // 5. initRunButton() = 랜덤번호 생성 
     private fun initRunButton() {
         runButton.setOnClickListener {
             
