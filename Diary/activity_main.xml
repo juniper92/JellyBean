@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
+    android:background="@color/teal_200"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="The Secret Garden"
         android:fontFamily="@font/bmfont_ttf"
-        android:textSize="30sp"
+        android:text="Secret Diary"
+        android:textColor="@color/white"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/passwordLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/passwordLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#E3E0E0"
+        android:background="#ECE2E2"
         android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,10 +36,9 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/openButton"
             android:layout_width="40dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:background="#B6AEAE"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="#BAB4B4"
             app:layout_constraintBottom_toBottomOf="@id/numberPicker1"
             app:layout_constraintEnd_toStartOf="@id/numberPicker1"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,20 +46,19 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/changePasswordButton"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
             android:background="@color/black"
             app:layout_constraintEnd_toEndOf="@id/openButton"
             app:layout_constraintStart_toStartOf="@id/openButton"
             app:layout_constraintTop_toBottomOf="@id/openButton" />
 
-
         <NumberPicker
             android:id="@+id/numberPicker1"
-            android:layout_width="30dp"
-            android:layout_height="120dp"
-            android:background="#B6AEAE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BAB4B4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/numberPicker2"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -67,18 +67,18 @@
 
         <NumberPicker
             android:id="@+id/numberPicker2"
-            android:layout_width="30dp"
-            android:layout_height="120dp"
-            android:background="#B6AEAE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BAB4B4"
             app:layout_constraintEnd_toStartOf="@id/numberPicker3"
             app:layout_constraintStart_toEndOf="@id/numberPicker1"
             app:layout_constraintTop_toTopOf="@id/numberPicker1" />
 
         <NumberPicker
             android:id="@+id/numberPicker3"
-            android:layout_width="30dp"
-            android:layout_height="120dp"
-            android:background="#B6AEAE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BAB4B4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/numberPicker2"
             app:layout_constraintTop_toTopOf="@id/numberPicker1" />
